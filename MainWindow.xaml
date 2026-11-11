@@ -6,7 +6,40 @@
         xmlns:local="clr-namespace:TodoListWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <!-- Верхняя панель: Добавление задачи -->
+        <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,0,0,10">
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Название:" VerticalAlignment="Center" Width="80"/>
+                <TextBox x:Name="TxtTitle" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Описание:" VerticalAlignment="Center" Width="80"/>
+                <TextBox x:Name="TxtDescription" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Срок:" VerticalAlignment="Center" Width="80"/>
+                <DatePicker x:Name="DpDueDate" Width="200"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Приоритет:" VerticalAlignment="Center" Width="80"/>
+                <ComboBox x:Name="CmbPriority" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <Button Content="Добавить" Click="BtnAdd_Click" Width="100" Margin="0,0,10,0"/>
+                <Button Content="Удалить" Click="BtnDelete_Click" Width="100" Margin="0,0,10,0"/>
+                <Button Content="Сохранить в JSON" Click="BtnSave_Click" Width="150" Margin="0,0,10,0"/>
+                <Button Content="Загрузить из JSON" Click="BtnLoad_Click" Width="150"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Нижняя панель: Список задач -->
+        <DataGrid Grid.Row="1" x:Name="DgTasks" AutoGenerateColumns="True" IsReadOnly="True"/>
     </Grid>
 </Window>
