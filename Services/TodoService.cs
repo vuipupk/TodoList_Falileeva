@@ -12,7 +12,7 @@ namespace TodoListWPF.Services
         public TodoService(ITaskRepository repository)
         {
             _repository = repository;
-            Tasks = new ObservableCollection<TodoModel>(_repository.LoadTasks());
+            Tasks = new ObservableCollection<TodoModel>();
         }
 
         public void AddTask(TodoModel task) => Tasks.Add(task);

@@ -40,6 +40,11 @@
         </StackPanel>
 
         <!-- Нижняя панель: Список задач -->
-        <DataGrid Grid.Row="1" x:Name="DgTasks" AutoGenerateColumns="True" IsReadOnly="True"/>
+        <DataGrid Grid.Row="1" x:Name="DgTasks" AutoGenerateColumns="True" IsReadOnly="False"/>
     </Grid>
 </Window>
+
+    
+    
+    
+    
