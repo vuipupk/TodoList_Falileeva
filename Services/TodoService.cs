@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
-using TodoListApp.Models;
-using TodoListApp.Repositories;
+using TodoListWPF.Models;
+using TodoListWPF.Repositories;
 
-namespace TodoListApp.Services
+namespace TodoListWPF.Services
 {
     public class TodoService
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using TodoListApp.Models;
+using TodoListWPF.Models;
 
-namespace TodoListApp.Repositories
+namespace TodoListWPF.Repositories
 {
     public class JsonTaskRepository : ITaskRepository
     {

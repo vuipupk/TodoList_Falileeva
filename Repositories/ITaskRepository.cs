@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using TodoListApp.Models;
+using TodoListWPF.Models;
 
-namespace TodoListApp.Repositories
+namespace TodoListWPF.Repositories
 {
     public interface ITaskRepository
     {

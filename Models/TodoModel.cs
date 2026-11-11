@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace TodoListApp.Models
+namespace TodoListWPF.Models
 {
     public class TodoModel : INotifyPropertyChanged
     {

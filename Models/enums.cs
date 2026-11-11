@@ -1,4 +1,4 @@
-﻿namespace TodoListApp.Models
+﻿namespace TodoListWPF.Models
 {
     public enum TaskStatus
     {
